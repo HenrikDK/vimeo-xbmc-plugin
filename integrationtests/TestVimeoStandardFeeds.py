@@ -47,7 +47,7 @@ class TestVimeoStandardFeeds(BaseTestCase.BaseTestCase):
         self.assert_directory_count_greater_than_or_equals(10)
         self.assert_directory_count_less_than_or_equals(51)
         self.assert_directory_is_a_video_list()
-        self.assert_directory_items_should_have_thumbnails()
+        self.assert_half_of_all_directory_items_should_have_thumbnails()
 
     def test_plugin_should_list_channels_category_listing_correctly_art(self):
         self.navigation.listMenu({'path': '/root/explore/channels', 'login': 'false', 'api': 'channels', 'category':'art', 'folder':'channel'})
