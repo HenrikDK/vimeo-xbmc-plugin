@@ -420,8 +420,8 @@ class TestVimeoLogin(BaseTestCase.BaseTestCase):
 
         login.performHttpLogin("token")
 
-        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "http://vimeo.com/log_in", "post_data": request,
-                                                                  "refering": "http://www.vimeo.com/log_in"})
+        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "https://vimeo.com/log_in", "post_data": request,
+                                                                  "refering": "https://www.vimeo.com/log_in"})
 
     def test_extractCrossSiteScriptingToken_should_call_fetchPage(self):
         sys.modules["__main__"].common.fetchPage.return_value = {"content":"","status":200}
@@ -430,7 +430,7 @@ class TestVimeoLogin(BaseTestCase.BaseTestCase):
 
         login.extractCrossSiteScriptingToken()
 
-        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "http://vimeo.com/log_in"})
+        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "https://vimeo.com/log_in"})
 
     def test_extractCrossSiteScriptingToken_should_use_parseDOM(self):
         sys.modules["__main__"].common.fetchPage.return_value = {"content":"","status":200}
