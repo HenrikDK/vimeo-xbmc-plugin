@@ -11,6 +11,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <language></language>
     <summary lang="en">Vimeo video plugin</summary>
     <description lang="en">Plugin that allows you to browse and view videos from everybodys favorite alternative video site!</description>
     <summary lang="bg">Видео добавка за Vimeo</summary>
