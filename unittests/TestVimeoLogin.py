@@ -420,7 +420,7 @@ class TestVimeoLogin(BaseTestCase.BaseTestCase):
 
         login.performHttpLogin("token")
 
-        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "https://vimeo.com/log_in", "post_data": request,
+        sys.modules["__main__"].common.fetchPage.assert_any_call({"link": "https://vimeo.com/log_in", "post_data": request, 'hide_post_data': True,
                                                                   "refering": "https://www.vimeo.com/log_in"})
 
     def test_extractCrossSiteScriptingToken_should_call_fetchPage(self):
