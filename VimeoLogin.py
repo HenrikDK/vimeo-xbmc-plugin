@@ -147,7 +147,7 @@ class VimeoLogin():
                    'token': xsrft}
 
         result = self.common.fetchPage({"link": "https://vimeo.com/log_in", "post_data": request,
-                                "refering": "https://www.vimeo.com/log_in"})
+                                "refering": "https://www.vimeo.com/log_in", "hide_post_data": True})
 
         self.common.log("Done")
         return result

@@ -8,13 +8,13 @@ import urllib2
 import cookielib
 
 # plugin constants
-version = "2.5.0"
-plugin = "Vimeo Beta-" + version
+version = "2.5.2"
+plugin = "Vimeo-" + version
 author = "TheCollective"
 url = "www.xbmc.com"
 
 # xbmc hooks
-settings = xbmcaddon.Addon(id='plugin.video.vimeo.beta')
+settings = xbmcaddon.Addon(id='plugin.video.vimeo')
 language = settings.getLocalizedString
 dbg = settings.getSetting("debug") == "true"
 dbglevel = 3
