@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<addon id="plugin.video.vimeo.beta" name="Vimeo Beta" provider-name="TheCollective" version="2.5.1">
+<addon id="plugin.video.vimeo.beta" name="Vimeo Beta" provider-name="TheCollective" version="2.5.2">
   <requires>
     <import addon="xbmc.python" version="2.0" />
     <import addon="script.common.plugin.cache.beta" version="1.5.0" />
