@@ -362,7 +362,7 @@ class VimeoNavigation():
 
         listitem.setProperty("Video", "true")
         listitem.setProperty("IsPlayable", "true")
-        listitem.setInfo(type='Video', infoLabels=item_params)
+        listitem.setInfo('Video', {'infoLabels': 'item_params'})
 
         self.xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=listitem, isFolder=False, totalItems=listSize + 1)
 

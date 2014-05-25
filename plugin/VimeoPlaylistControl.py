@@ -80,7 +80,7 @@ class VimeoPlaylistControl():
             listitem = self.xbmcgui.ListItem(label=video("Title"), iconImage=video("thumbnail"), thumbnailImage=video("thumbnail"))
             listitem.setProperty('IsPlayable', 'true')
             listitem.setProperty("Video", "true" )
-            listitem.setInfo(type='Video', infoLabels=entry)
+            listitem.setInfo('Video', {'infoLabels': 'entry'})
 
             playlist.add(video_url % (sys.argv[0], video("videoid") ), listitem)
 
